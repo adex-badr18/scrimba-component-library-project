@@ -116,7 +116,7 @@ main {
 .badges-container>div {
     display: flex;
     flex-flow: row wrap;
-    gap: .5em 1em;
+    gap: .8em 1em;
 }
 
 .badge {
@@ -178,16 +178,22 @@ main {
 
     .badges-title {
         grid-area: heading;
+        justify-self: flex-start;
     }
 
     .square-title {
         grid-area: square-heading;
-        align-self: center;
     }
 
     .pill-title {
         grid-area: pill-heading;
+        
+    }
+
+    .square-title,
+    .pill-title {
         align-self: center;
+        justify-self: flex-end;
     }
 
     .square-container {
