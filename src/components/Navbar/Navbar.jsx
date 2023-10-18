@@ -1,4 +1,4 @@
-import logo from '/favicon.webp';
+import logo from '/cube.png';
 
 export default function Navbar() {
     return (
