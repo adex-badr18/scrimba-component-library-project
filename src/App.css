@@ -166,3 +166,35 @@ main {
     background-color: var(--pink-bg);
     color: var(--pink);
 }
+
+@media (min-width: 478px) {
+    .badges-container {
+        display: grid;
+        grid-template-areas:
+            ". heading"
+            "square-heading square-badges"
+            "pill-heading pill-badges";
+    }
+
+    .badges-title {
+        grid-area: heading;
+    }
+
+    .square-title {
+        grid-area: square-heading;
+        align-self: center;
+    }
+
+    .pill-title {
+        grid-area: pill-heading;
+        align-self: center;
+    }
+
+    .square-container {
+        grid-area: square-badges;
+    }
+
+    .pill-container {
+        grid-area: pill-badges;
+    }
+}
