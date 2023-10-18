@@ -1,3 +1,26 @@
+:root {
+    --gray: #1F2937;
+    --red: #991B1B;
+    --yellow: #92400E;
+    --green: #065F46;
+    --blue: #1E40AF;
+    --indigo: #3730A3;
+    --purple: #5B21B6;
+    --pink: #9D174D;
+    
+    --gray-bg: #F3F4F6;
+    --red-bg: #FEE2E2;
+    --yellow-bg: #FEF3C7;
+    --green-bg: #D1FAE5;
+    --blue-bg: #DBEAFE;
+    --indigo-bg: #E0E7FF;
+    --purple-bg: #EDE9FE;
+    --pink-bg: #FCE7F3;
+
+    --lightblue: #1e90ff;
+    --white: #ffffff;
+}
+
 div.container {
     max-width: 992px;
     width: 100%;
@@ -16,6 +39,7 @@ div.logo-container {
     display: flex;
     align-items: center;
     gap: .3em;
+    cursor: pointer;
 }
 
 .nav-logo {
@@ -25,7 +49,7 @@ div.logo-container {
 .logo-text {
     font-size: 20px;
     font-weight: 700;
-    color: #4682B4;
+    color: var(--blue);
 }
 
 .logo-text span:first-of-type {
@@ -45,7 +69,7 @@ ul.nav {
 
 ul.nav a {
     text-decoration: none;
-    color: #4682B4;
+    color: var(--blue);
     padding-bottom: .2em;
 }
 
