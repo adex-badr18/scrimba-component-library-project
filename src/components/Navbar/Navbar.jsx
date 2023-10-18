@@ -5,7 +5,7 @@ export default function Navbar() {
         <nav>
             <div className="logo-container">
                 <img src={logo} className='nav-logo' alt="Connected components" />
-                <h3 className="logo-text">Component Library++</h3>
+                <h3 className="logo-text">Component Library<span>+</span><span>+</span></h3>
             </div>
 
             <ul className="nav">
