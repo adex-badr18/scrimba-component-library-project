@@ -170,6 +170,12 @@ h3.title {
 }
 
 /* Banners */
+.banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
 .banner-container:not(:last-of-type) {
     margin-bottom: 25px;
 }
@@ -187,6 +193,8 @@ h3.title {
     padding: 16px;
     border-radius: 6px;
     background-color: #EFF6FF;
+    min-width: 200px;
+    max-width: 400px;
 
 }
 
@@ -321,7 +329,7 @@ h3.title {
         grid-column: 1 / 2;
         align-self: center;
         font-family: 'Permanent Marker', cursive;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 0.7;
         color: #5E5D5D;
     }
@@ -331,3 +339,32 @@ h3.title {
     }
 }
 
+@media (min-width: 768px) {
+    /* .banners-container {
+        display: grid;
+        grid-template-areas: 
+            ". mh mh"
+            ". mt st"
+            "mb mb sb";
+    }
+    
+    h1.banners-title {
+        grid-area: mh;
+    }
+
+    h3.multiline-title {
+        grid-area: mt;
+    }
+
+    h3.singleline-title {
+        grid-area: st;
+    }
+
+    .multiline-container {
+        grid-area: mb;
+    }
+
+    .singleline-container {
+        grid-area: sb;
+    } */
+}
