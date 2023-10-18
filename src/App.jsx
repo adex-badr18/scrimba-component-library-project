@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Badges from './components/Badge/Badges';
+import Badges from './components/Badges/Badges';
 
 function App() {
     return (
