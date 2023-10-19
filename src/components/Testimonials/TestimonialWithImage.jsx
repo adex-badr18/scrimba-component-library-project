@@ -7,11 +7,11 @@ export default function TestimonialWithImage({ children, image, size, className,
     const classes = classNames(className, sizeClass);
 
     return (
-        <div className={`testimonial ${classes}`}>
+        <div className={`testimg ${classes}`} {...rest}>
             {image}
-            <div className="testimonial-body">
+            <div className="testimg-body">
                 <BiSolidQuoteAltLeft className="quote-icon" />
-                {Children}
+                {children}
             </div>
         </div>
     )
