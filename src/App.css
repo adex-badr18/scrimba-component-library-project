@@ -441,4 +441,8 @@ p.card-body {
         grid-column: 3 / 4;
 
     }
+
+    .cards-container {
+        flex-direction: row;
+    }
 }
