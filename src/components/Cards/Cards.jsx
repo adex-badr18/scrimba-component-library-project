@@ -12,7 +12,7 @@ export default function Cards() {
 
             <div className="cards-container">
                 <div className="card-container">
-                    <h3 className="card-title title">Not Hoverable</h3>
+                    <h3 className="card-title title">Ordinary</h3>
                     <Card icon={cloudUpload} isHoverable={false} badgeColor='blue'>
                         <h3 className="card-header">Easy Deployment</h3>
                         <p className="card-body">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
