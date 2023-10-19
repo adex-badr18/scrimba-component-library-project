@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Badges from './components/Badges/Badges';
 import Banners from './components/Banners/Banners';
+import Cards from './components/Cards/Cards';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <main>
                 <Badges />
                 <Banners />
+                <Cards />
             </main>
         </div>
     )
