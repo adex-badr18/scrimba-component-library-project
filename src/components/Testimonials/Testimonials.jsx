@@ -11,12 +11,14 @@ export default function Testimonials() {
 
             <div className="testsimg-container">
                 <h3 className="title testimg-title">Mobile</h3>
-                <div className="testimg-container">
+                <div className="testimg-container mobile">
                     <TestimonialWithImage image={imgMobile} size='mobile'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. </p>
 
-                        <h5>May Andersons</h5>
-                        <small>Workcation, CTO</small>
+                        <div>
+                            <h5>May Andersons</h5>
+                            <small>Workcation, CTO</small>
+                        </div>
                     </TestimonialWithImage>
                 </div>
             </div>
