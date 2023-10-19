@@ -5,9 +5,13 @@ export default function Banners() {
 
     return (
         <section id='banners' className="banners-container">
-            <h1 className="title banners-title">BANNERS</h1>
+            <div className="titles-container">
+                <h1 className="title banners-title">BANNERS</h1>
 
-            <h3 className="title multiline-title">MULTI LINE</h3>
+                <h3 className="title multiline-title">MULTI LINE</h3>
+
+                <h3 className="title singleline-title">SINGLE LINE</h3>
+            </div>
             <div className="multiline-banners">
                 {
                     types.map(type => (
