@@ -94,7 +94,7 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 2.5em;
 }
 
 h1.title {
@@ -214,7 +214,7 @@ h3.title {
     color: #60A5FA;
 }
 
-.titles-container > h3 {
+.titles-container>h3 {
     display: none;
 }
 
@@ -271,6 +271,70 @@ h3.title {
     color: #F87171;
 }
 
+/* Cards */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+}
+
+.card {
+    padding: 56px 24px 32px;
+    background: #F9FAFB;
+    border-radius: 8px;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+    position: relative;
+    max-width: 384px;
+    width: 100%;
+}
+
+span.card-badge {
+    position: absolute;
+    height: 200px;
+    left: 0px;
+    right: 0px;
+    top: -24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+
+span.card-badge > svg {
+    color: #FFFFFF;
+    width: 24px;
+    height: 24px;
+}
+
+span.card-badge.blue {
+    background-color: #3F75FE;
+}
+
+span.card-badge.green {
+    background-color: var(--green);
+}
+
+
+h3.card-header {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+p.card-body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B7280;
+}
+
 /* Media Queries */
 @media (min-width: 478px) {
     main {
@@ -324,7 +388,7 @@ h3.title {
         align-items: flex-start;
     }
 
-    .titles-container > h3 {
+    .titles-container>h3 {
         display: unset;
     }
 
@@ -369,7 +433,6 @@ h3.title {
 
     .sing {
         grid-column: 3 / 4;
-        
+
     }
 }
-
