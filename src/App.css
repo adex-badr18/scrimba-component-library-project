@@ -279,6 +279,12 @@ h3.title {
     gap: 47px;
 }
 
+div.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
 .card {
     padding: 56px 24px 32px;
     background: #F9FAFB;
