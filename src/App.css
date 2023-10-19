@@ -194,7 +194,7 @@ h3.title {
     border-radius: 6px;
     background-color: #EFF6FF;
     min-width: 200px;
-    max-width: 400px;
+    width: 100%;
 
 }
 
@@ -319,10 +319,11 @@ h3.title {
     }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 768px) {
     .banner-container {
         display: grid;
-        grid-template-columns: 120px 1fr;
+        grid-template-columns: 120px repeat(2, 1fr);
+        align-items: center;
     }
 
     h3.type-title {
@@ -334,37 +335,13 @@ h3.title {
         color: #5E5D5D;
     }
 
-    .banner {
-        grid-column: 2 / -1;
+    .mult {
+        grid-column: 2 / 3;
+    }
+
+    .sing {
+        grid-column: 3 / 4;
+        
     }
 }
 
-@media (min-width: 768px) {
-    /* .banners-container {
-        display: grid;
-        grid-template-areas: 
-            ". mh mh"
-            ". mt st"
-            "mb mb sb";
-    }
-    
-    h1.banners-title {
-        grid-area: mh;
-    }
-
-    h3.multiline-title {
-        grid-area: mt;
-    }
-
-    h3.singleline-title {
-        grid-area: st;
-    }
-
-    .multiline-container {
-        grid-area: mb;
-    }
-
-    .singleline-container {
-        grid-area: sb;
-    } */
-}

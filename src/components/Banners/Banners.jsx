@@ -13,7 +13,7 @@ export default function Banners() {
                     types.map(type => (
                         <div key={type} className="banner-container">
                             <h3 className="title type-title">{type.toUpperCase()}</h3>
-                            <Banner type={type}>
+                            <Banner className='mult' type={type}>
                                 <div className="banner-children">
                                     <h5>
                                         {
@@ -27,7 +27,7 @@ export default function Banners() {
                                 </div>
                             </Banner>
 
-                            <Banner type={type}>
+                            <Banner className='single' type={type}>
                                 <div className="banner-children">
                                     <h5>
                                         {
