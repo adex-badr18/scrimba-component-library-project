@@ -7,11 +7,10 @@ export default function Banners() {
         <section id='banners' className="banners-container">
             <div className="titles-container">
                 <h1 className="title banners-title">BANNERS</h1>
-
                 <h3 className="title multiline-title">MULTI LINE</h3>
-
                 <h3 className="title singleline-title">SINGLE LINE</h3>
             </div>
+            
             <div className="multiline-banners">
                 {
                     types.map(type => (
@@ -27,7 +26,7 @@ export default function Banners() {
                                                         'Update available'
                                         }
                                     </h5>
-                                    <p>Lorem ipsum fdjnjn ylasdgwj jksne fenudbe uefhuewfuewb yegyeowq udvuqppit wyvnkce kbgxxzas fndj cefsg</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</p>
                                 </div>
                             </Banner>
 
@@ -47,28 +46,6 @@ export default function Banners() {
                     ))
                 }
             </div>
-
-            {/* <h3 className="title singleline-title">SINGLE LINE</h3>
-            <div className="singleline-banners">
-                {
-                    types.map(type => (
-                        <div key={type} className="banner-container singleline-container">
-                            <Banner type={type}>
-                                <div className="banner-children">
-                                    <h5>
-                                        {
-                                            type === 'success' ? 'Congratulations!' :
-                                                type === 'warning' ? 'Attention' :
-                                                    type === 'error' ? 'There is a problem with your application' :
-                                                        'Update available'
-                                        }
-                                    </h5>
-                                </div>
-                            </Banner>
-                        </div>
-                    ))
-                }
-            </div> */}
         </section>
     )
 }
