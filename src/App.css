@@ -351,6 +351,12 @@ p.card-body {
 }
 
 /* Desktop Testimonial with image */
+.desktop-testimonials {
+    display: none;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .testimonials div:not(:last-of-type) {
     margin-bottom: 2em;
 }
@@ -407,12 +413,6 @@ p.card-body {
 }
 
 /* Desktop Testimonial with logo */
-.desktop-testimonials {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
-
 .testimonial.lg {
     color: #111827;
     background-color: #FFFFFF;
@@ -684,6 +684,10 @@ div.testimg.mobile {
 
     .cards-container {
         flex-direction: row;
+    }
+
+    .desktop-testimonials {
+        display: flex;
     }
 
     .mobile-testimonials {
