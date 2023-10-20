@@ -433,6 +433,7 @@ div.testimg.mobile {
     flex-direction: column;
     gap: 32px;
     color: #111827;
+    position: relative;
 }
 
 .testimonial.mobile .testimonial-body p {
@@ -443,6 +444,27 @@ div.testimg.mobile {
 
 .testimonial.mobile .testimonial-body div {
     font-size: 14px;
+    z-index: 1;
+}
+
+.testimonial.mobile .testimonial-body div::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    bottom: -50%;
+    top: 80%;
+    right: 40%;
+    background-image: url('/dot-pattern.png');
+    background-position: left bottom;
+    background-size: cover;
+    z-index: -1;
+}
+
+.testimonial-body .dot-pattern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
 }
 
 .testimonial-body div small {

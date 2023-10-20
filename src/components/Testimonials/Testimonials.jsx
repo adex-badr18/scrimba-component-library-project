@@ -41,7 +41,7 @@ export default function Testimonials() {
 
                 <div className="testimonial-container">
                     <Testimonial logo={testLogo} size='mobile'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. </p>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit." </p>
 
                         <div>
                             <h5>May Andersons</h5>

@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { BiSolidQuoteAltLeft } from "react-icons/bi";
 
 export default function Testimonial({ children, logo, size, className, ...rest }) {
     const sizeClass = size && size;
