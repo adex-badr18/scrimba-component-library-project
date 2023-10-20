@@ -21,6 +21,7 @@ export default function Testimonials() {
 
                         <div>
                             <h5>May Andersons</h5>
+                            <span>/</span>
                             <small>Workcation, CTO</small>
                         </div>
                     </Testimonial>

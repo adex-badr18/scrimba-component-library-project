@@ -387,6 +387,9 @@ p.card-body {
 
 .testimonial.lg .testimonial-body div {
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
     z-index: 1;
 }
 
@@ -398,9 +401,13 @@ p.card-body {
     top: -20%;
     right: 88%;
     background-image: url('/dot-pattern.png');
-    /* background-position: left bottom; */
-    /* background-size: cover; */
     z-index: -1;
+}
+
+.testimonial.lg .testimonial-body div span {
+    color: #2E59F3;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .testimonial.lg .testimonial-body div small {
