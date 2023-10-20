@@ -14,17 +14,17 @@ export default function Testimonials() {
         <section id="testimonials" className="testimonials">
             <h1 className="title">Testimonials</h1>
 
-            <div className="desktop">
-                {/* <div className="testimg-desktop-container">
-                    <TestimonialWithImage image={imgDesktop} size='desktop'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. </p>
+            <div className="desktop-testimonials">
+                <div className="testimonial-lg-container">
+                    <Testimonial logo={testLogo} size='lg'>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit." </p>
 
                         <div>
                             <h5>May Andersons</h5>
                             <small>Workcation, CTO</small>
                         </div>
-                    </TestimonialWithImage>
-                </div> */}
+                    </Testimonial>
+                </div>
             </div>
 
             <div className="mobile-testimonials">
