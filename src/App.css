@@ -125,6 +125,7 @@ h3.title {
 .badges-container>div {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: .8em 1em;
 }
 
