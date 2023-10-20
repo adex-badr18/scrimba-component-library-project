@@ -350,8 +350,62 @@ p.card-body {
     color: #6B7280;
 }
 
-/* Desktop Testimonials */
+/* Desktop Testimonial with logo */
+.desktop-testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
+.testimonial.lg {
+    color: #111827;
+    background-color: #FFFFFF;
+    padding: 71px;
+    text-align: center;
+}
+
+.testimonial.lg img {
+    margin-bottom: 40px;
+}
+
+.testimonial.lg .testimonial-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    color: #111827;
+    position: relative;
+}
+
+.testimonial.lg .testimonial-body p {
+    max-width: 500px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.testimonial.lg .testimonial-body div {
+    font-size: 14px;
+    z-index: 1;
+}
+
+.testimonial.lg .testimonial-body div::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    bottom: -80px;
+    top: -20%;
+    right: 88%;
+    background-image: url('/dot-pattern.png');
+    /* background-position: left bottom; */
+    /* background-size: cover; */
+    z-index: -1;
+}
+
+.testimonial.lg .testimonial-body div small {
+    color: #6B7280;
+}
 
 /* Mobile Testimonial with Image */
 .mobile-testimonials {
@@ -458,13 +512,6 @@ div.testimg.mobile {
     background-position: left bottom;
     background-size: cover;
     z-index: -1;
-}
-
-.testimonial-body .dot-pattern {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 200px;
 }
 
 .testimonial-body div small {
