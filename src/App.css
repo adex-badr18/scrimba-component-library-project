@@ -350,6 +350,39 @@ p.card-body {
     color: #6B7280;
 }
 
+/* Desktop Testimonial with image */
+.testimonials div:not(:last-of-type) {
+    margin-bottom: 2em;
+}
+
+.testimonials .testimg-container.lg {
+    height: 300px;
+    background-color: #2545B8;
+    position: relative;
+    margin: 2em 0 3em;
+}
+
+.testimg.lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: #FFFFFF;
+    width: 95%;
+    margin: 0 auto;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border: 1px solid; */
+}
+
+.testimg.lg img {
+    width: 300px;
+    height: 376px;
+}
+
 /* Desktop Testimonial with logo */
 .desktop-testimonials {
     display: flex;
