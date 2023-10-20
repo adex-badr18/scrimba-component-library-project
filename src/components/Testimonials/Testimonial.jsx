@@ -1,8 +1,7 @@
-import { Children } from "react";
 import classNames from "classnames";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 
-export default function Testimonial({ children, size, className, ...rest }) {
+export default function Testimonial({ children, logo, size, className, ...rest }) {
     const sizeClass = size && size;
     const classes = classNames(className, sizeClass);
 
@@ -10,8 +9,7 @@ export default function Testimonial({ children, size, className, ...rest }) {
         <div className={`testimonial ${classes}`}>
             {logo}
             <div className="testimonial-body">
-                <BiSolidQuoteAltLeft className="quote-icon" />
-                {Children}
+                {children}
             </div>
         </div>
     )

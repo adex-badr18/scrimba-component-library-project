@@ -350,13 +350,22 @@ p.card-body {
     color: #6B7280;
 }
 
-/* Testimonials */
-div.testimg-container {
+/* Desktop Testimonials */
+
+
+/* Mobile Testimonial with Image */
+.mobile-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.mobile-testimonials div.testimg-container {
     background-color: #FFFFFF;
     max-width: 300px;
     width: 100%;
     padding-top: 80px;
-    margin-top: 1em;
     position: relative;
 }
 
@@ -367,7 +376,7 @@ div.testimg.mobile {
     flex-direction: column;
 }
 
-.testimg>img {
+.mobile-testimonials .testimg>img {
     position: absolute;
     width: 100%;
     object-fit: contain;
@@ -379,27 +388,65 @@ div.testimg.mobile {
     border-radius: 12px;
 }
 
-.quote-icon {
+.mobile-testimonials .quote-icon {
     width: 36px;
     height: 36px;
     color: rgba(255, 255, 255, 0.25);
 }
 
-.testimg-body {
+.mobile-testimonials .testimg-body {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 32px;
     color: #FFFFFF;
 }
 
-.testimg-body p {
+.mobile-testimonials .testimg-body p {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
 }
 
-.testimg-body div {
+.mobile-testimonials .testimg-body div {
     font-size: 14px;
+}
+
+/* Mobile testimonial with logo */
+.testimonial.mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 300px;
+    width: 100%;
+    padding: 74px 16px;
+    background-color: #FFFFFF;
+}
+
+.testimonial.mobile img {
+    width: 180px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.testimonial.mobile .testimonial-body {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: #111827;
+}
+
+.testimonial.mobile .testimonial-body p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.testimonial.mobile .testimonial-body div {
+    font-size: 14px;
+}
+
+.testimonial-body div small {
+    color: #6B7280;
 }
 
 /* Media Queries */
@@ -505,5 +552,10 @@ div.testimg.mobile {
 
     .cards-container {
         flex-direction: row;
+    }
+
+    .mobile-testimonials {
+        flex-direction: row;
+        justify-content: center;
     }
 }
